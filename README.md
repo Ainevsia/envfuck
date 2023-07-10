@@ -31,7 +31,7 @@ wget -O ~/.tmux.conf.local https://raw.githubusercontent.com/Ainevsia/.config/ma
 
 # proxychains
 # 使用 sed 命令将文件的最后一行替换为新的内容
-sudo sed -i '$s/.*/socks5 127.0.0.1 1080/' /etc/proxychains4.conf
+sudo sed -i 's/^socks.*/socks5 127.0.0.1 1080/' /etc/proxychains4.conf
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
