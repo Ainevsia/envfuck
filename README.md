@@ -6,7 +6,7 @@ fuck environment setup
 
 ```bash
 sudo apt update
-sudo apt install git tmux python3 python3-pip wget
+sudo apt install git tmux python3 python3-pip wget proxychains4
 git config --global user.name "Ainevsia"
 git config --global user.email "zhipengxu@sjtu.edu.cn"
 ssh-keygen -t ed25519
@@ -28,4 +28,7 @@ sudo usermod -aG docker $USER
 # tmux config file
 wget -O ~/.tmux.conf https://raw.githubusercontent.com/Ainevsia/.config/master/.tmux.conf
 wget -O ~/.tmux.conf.local https://raw.githubusercontent.com/Ainevsia/.config/master/.tmux.conf.local
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
