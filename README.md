@@ -1,0 +1,2 @@
+# envfuck
+fuck environment setup
