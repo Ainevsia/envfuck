@@ -9,4 +9,5 @@ sudo apt update
 sudo apt install git tmux
 git config --global user.name "Ainevsia"
 git config --global user.email "zhipengxu@sjtu.edu.cn"
+ssh-keygen -t ed25519
 ```
