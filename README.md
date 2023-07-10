@@ -6,7 +6,7 @@ fuck environment setup
 
 ```bash
 sudo apt update
-sudo apt install git tmux python3 python3-pip
+sudo apt install git tmux python3 python3-pip wget
 git config --global user.name "Ainevsia"
 git config --global user.email "zhipengxu@sjtu.edu.cn"
 ssh-keygen -t ed25519
@@ -22,4 +22,8 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# tmux config file
+wget -O ~/.tmux.conf https://raw.githubusercontent.com/Ainevsia/.config/master/.tmux.conf
+wget -O ~/.tmux.conf.local https://raw.githubusercontent.com/Ainevsia/.config/master/.tmux.conf.local
 ```
