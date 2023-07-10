@@ -36,3 +36,9 @@ sudo sed -i 's/^socks.*/socks5 127.0.0.1 1080/' /etc/proxychains4.conf
 # oh-my-zsh
 proxychains sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
+# Debain
+
+```bash
+sudo sed -i "s|http://deb.debian.org/debian|http://mirror.sjtu.edu.cn/debian|g" /etc/apt/sources.list
+```
