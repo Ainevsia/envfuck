@@ -42,3 +42,7 @@ proxychains sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzs
 ```bash
 sudo sed -i "s|http://deb.debian.org/debian|http://mirror.sjtu.edu.cn/debian|g" /etc/apt/sources.list
 ```
+# Go
+```bash
+go env -w GO111MODULE=on && go env -w GOPROXY=https://goproxy.cn,direct
+```
