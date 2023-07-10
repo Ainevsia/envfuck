@@ -34,5 +34,5 @@ wget -O ~/.tmux.conf.local https://raw.githubusercontent.com/Ainevsia/.config/ma
 sudo sed -i 's/^socks.*/socks5 127.0.0.1 1080/' /etc/proxychains4.conf
 
 # oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+proxychains sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
