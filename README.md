@@ -6,7 +6,7 @@ fuck environment setup
 
 ```bash
 sudo apt update
-sudo apt install git tmux
+sudo apt install git tmux python3 python3-pip
 git config --global user.name "Ainevsia"
 git config --global user.email "zhipengxu@sjtu.edu.cn"
 ssh-keygen -t ed25519
