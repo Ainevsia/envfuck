@@ -44,7 +44,7 @@ sudo install lazygit /usr/local/
 
 # pip
 pip config set global.index-url https://mirror.sjtu.edu.cn/pypi/web/simple
-echo 'PATH=$PATH:$HOME/.local/bin' >> ~/.zshrc
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.zshrc
 ```
 
 
