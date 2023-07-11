@@ -24,6 +24,7 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ## post docker installation
 sudo usermod -aG docker $USER
+echo 'alias dk="docker"' >> ~/.zshrc
 
 # tmux config file
 wget -O ~/.tmux.conf https://raw.githubusercontent.com/Ainevsia/.config/master/.tmux.conf
