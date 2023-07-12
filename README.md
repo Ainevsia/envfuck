@@ -58,6 +58,9 @@ sudo sed -i "s|http://deb.debian.org/debian|http://mirror.sjtu.edu.cn/debian|g" 
 # Go
 ```bash
 go env -w GO111MODULE=on && go env -w GOPROXY=https://goproxy.cn,direct
+
+# protobuf
+sudo apt install -y protobuf-compiler
 ```
 
 # Rust 
