@@ -68,4 +68,5 @@ cargo install --git https://github.com/kamiyaa/joshuto.git --tag v0.9.5
 echo 'alias ra="joshuto"' >> ~/.zshrc
 mkdir -p $HOME/.config/joshuto
 wget -O $HOME/.config/joshuto/keymap.toml https://raw.githubusercontent.com/Ainevsia/.config/master/keymap.toml
+wget -O $HOME/.config/joshuto/mimetype.toml https://raw.githubusercontent.com/Ainevsia/.config/master/mimetype.toml
 ```
