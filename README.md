@@ -59,3 +59,8 @@ sudo sed -i "s|http://deb.debian.org/debian|http://mirror.sjtu.edu.cn/debian|g" 
 ```bash
 go env -w GO111MODULE=on && go env -w GOPROXY=https://goproxy.cn,direct
 ```
+
+# Rust 
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
