@@ -65,4 +65,5 @@ go env -w GO111MODULE=on && go env -w GOPROXY=https://goproxy.cn,direct
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo '[source.crates-io]\nregistry = "https://github.com/rust-lang/crates.io-index"\n\nreplace-with = "tuna"\n\n[source.tuna]\nregistry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"' > $HOME/.cargo/config
 cargo install --git https://github.com/kamiyaa/joshuto.git --tag v0.9.5
+echo 'alias ra="joshuto"' >> ~/.zshrc
 ```
