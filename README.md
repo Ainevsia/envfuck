@@ -69,4 +69,5 @@ echo 'alias ra="joshuto"' >> ~/.zshrc
 mkdir -p $HOME/.config/joshuto
 wget -O $HOME/.config/joshuto/keymap.toml https://raw.githubusercontent.com/Ainevsia/.config/master/keymap.toml
 wget -O $HOME/.config/joshuto/mimetype.toml https://raw.githubusercontent.com/Ainevsia/.config/master/mimetype.toml
+wget -O $HOME/.config/joshuto/preview_file.sh https://raw.githubusercontent.com/Ainevsia/.config/master/preview_file.sh
 ```
