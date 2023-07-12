@@ -71,4 +71,7 @@ wget -O $HOME/.config/joshuto/keymap.toml https://raw.githubusercontent.com/Aine
 wget -O $HOME/.config/joshuto/mimetype.toml https://raw.githubusercontent.com/Ainevsia/.config/master/mimetype.toml
 wget -O $HOME/.config/joshuto/preview_file.sh https://raw.githubusercontent.com/Ainevsia/.config/master/preview_file.sh
 wget -O $HOME/.config/joshuto/joshuto.toml https://raw.githubusercontent.com/Ainevsia/.config/master/joshuto.toml
+wget -O $HOME/.config/joshuto/theme.toml https://raw.githubusercontent.com/Ainevsia/.config/master/theme.toml
+wget -O $HOME/.config/joshuto/icons.toml https://raw.githubusercontent.com/Ainevsia/.config/master/icons.toml
+wget -O $HOME/.config/joshuto/bookmarks.toml https://raw.githubusercontent.com/Ainevsia/.config/master/bookmarks.toml
 ```
