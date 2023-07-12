@@ -67,9 +67,10 @@ echo '[source.crates-io]\nregistry = "https://github.com/rust-lang/crates.io-ind
 cargo install --git https://github.com/kamiyaa/joshuto.git --tag v0.9.5
 echo 'alias ra="joshuto"' >> ~/.zshrc
 mkdir -p $HOME/.config/joshuto
+wget -O $HOME/.config/joshuto/preview_file.sh https://raw.githubusercontent.com/Ainevsia/.config/master/preview_file.sh
+chmod +x $HOME/.config/joshuto/preview_file.sh
 wget -O $HOME/.config/joshuto/keymap.toml https://raw.githubusercontent.com/Ainevsia/.config/master/keymap.toml
 wget -O $HOME/.config/joshuto/mimetype.toml https://raw.githubusercontent.com/Ainevsia/.config/master/mimetype.toml
-wget -O $HOME/.config/joshuto/preview_file.sh https://raw.githubusercontent.com/Ainevsia/.config/master/preview_file.sh
 wget -O $HOME/.config/joshuto/joshuto.toml https://raw.githubusercontent.com/Ainevsia/.config/master/joshuto.toml
 wget -O $HOME/.config/joshuto/theme.toml https://raw.githubusercontent.com/Ainevsia/.config/master/theme.toml
 wget -O $HOME/.config/joshuto/icons.toml https://raw.githubusercontent.com/Ainevsia/.config/master/icons.toml
