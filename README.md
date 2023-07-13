@@ -85,3 +85,10 @@ wget -O $HOME/.config/joshuto/theme.toml https://raw.githubusercontent.com/Ainev
 wget -O $HOME/.config/joshuto/icons.toml https://raw.githubusercontent.com/Ainevsia/.config/master/icons.toml
 wget -O $HOME/.config/joshuto/bookmarks.toml https://raw.githubusercontent.com/Ainevsia/.config/master/bookmarks.toml
 ```
+
+# Node npm nvm
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install node # "node" is an alias for the latest version
+nvm use node
+```
