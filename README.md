@@ -6,7 +6,7 @@ fuck environment setup
 
 ```bash
 sudo apt update
-sudo apt install git tmux htop python3 ipython3 python3-pip wget proxychains4 zsh unzip p7zip-full fd-find ripgrep nginx npm
+sudo apt install git tmux htop python3 ipython3 python3-pip wget proxychains4 zsh unzip p7zip-full fd-find ripgrep nginx npm btop
 git config --global user.name "Ainevsia"
 git config --global user.email "zhipengxu@sjtu.edu.cn"
 ssh-keygen -t ed25519
