@@ -95,3 +95,8 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 nvm install node # "node" is an alias for the latest version
 nvm use node
 ```
+
+```bash
+npm config set registry https://registry.npmmirror.com/
+pnpm config set registry https://registry.npmmirror.com/
+```
