@@ -100,3 +100,12 @@ nvm use node
 npm config set registry https://registry.npmmirror.com/
 pnpm config set registry https://registry.npmmirror.com/
 ```
+
+## Docker build
+
+```bash
+RUN sed -i 's@deb.debian.org@mirrors.ustc.edu.cn@g' /etc/apt/sources.list.d/debian.sources
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+RUN npm config set registry https://registry.npmmirror.com
+RUN pip config set global.index-url https://mirror.sjtu.edu.cn/pypi/web/simple
+```
