@@ -4,7 +4,9 @@ fuck environment setup
 ## Ubuntu
 换源 https://mirror.sjtu.edu.cn/ubuntu
 
+
 ```bash
+sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list
 sudo apt update
 sudo apt install git tmux htop python3 ipython3 python3-pip wget proxychains4 zsh unzip p7zip-full fd-find ripgrep nginx npm btop
 git config --global user.name "Ainevsia"
