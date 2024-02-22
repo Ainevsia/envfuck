@@ -76,8 +76,8 @@ sudo apt install -y protobuf-compiler
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # echo -e '[source.crates-io]\nregistry = "https://github.com/rust-lang/crates.io-index"\n\nreplace-with = "tuna"\n\n[source.tuna]\nregistry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"' > $HOME/.cargo/config
 echo -e '[source]\n[source.mirror]\nregistry = "sparse+https://mirrors.sjtug.sjtu.edu.cn/crates.io-index/"\n[source.crates-io]\nreplace-with = "mirror"' > $HOME/.cargo/config
-echo 'export RUSTUP_UPDATE_ROOT=https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup' >> ~/.zshrc
-echo 'export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup' >> ~/.zshrc
+echo 'export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup' >> ~/.zshrc
+echo 'export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static' >> ~/.zshrc
 
 cargo install --git https://github.com/kamiyaa/joshuto.git --tag v0.9.5
 echo 'alias ra="joshuto"' >> ~/.zshrc
