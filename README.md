@@ -112,3 +112,43 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
 RUN npm config set registry https://registry.npmmirror.com
 RUN pip config set global.index-url https://mirror.sjtu.edu.cn/pypi/web/simple
 ```
+
+## Ubuntu 24.04 Setup commands
+
+### Kernel Build
+
+```bash
+# make menuconfig
+apt install -y libncurses-dev flex bison libelf-dev wget curl unzip
+
+# get linux kernel source code
+wget https://mirrors.tuna.tsinghua.edu.cn/kernel/v6.x/linux-6.12.3.tar.xz && tar xJf linux-6.12.3.tar.xz
+
+# make -j
+apt install -y build-essential tmux libssl-dev bc btop vim fzf zsh file gdb
+
+# yazi fastfetch ! onefetch ?
+wget https://github.com/sxyazi/yazi/releases/download/v0.3.3/yazi-x86_64-unknown-linux-gnu.zip
+wget https://github.com/fastfetch-cli/fastfetch/releases/download/2.31.0/fastfetch-linux-amd64.zip
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# make fedora initramdisk
+apt install -y mkosi systemd-ukify qemu-system-x86 genisoimage 
+# gef
+wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py
+echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+echo set auto-load safe-path / >> ~/.gdbinit
+
+sudo mkosi --distribution=fedora --release=41 --format=disk --output=fedora-image.img
+
+#!/bin/bash
+qemu-system-x86_64 \
+        -s \
+        -kernel /home/u/linux-6.12.3/vmlinux \
+        -hda /home/u/Fedora-Cloud-Base-Generic-41-1.4.x86_64.qcow2 \
+        -cdrom ./41/seed.iso \
+        -append "root=/dev/sda4 rootfstype=btrfs rootflags=subvol=root console=ttyS0" \
+        -m 2G -nographic
+```
